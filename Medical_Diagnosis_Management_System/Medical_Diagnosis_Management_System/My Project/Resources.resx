@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1451921400_applications-science" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1451921400_applications-science.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452045691_system-software-update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452045691_system-software-update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\view.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit-patient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\edit-patient.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\edit_clear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452979531_contact-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452979531_contact-new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="receipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\receipt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\document_save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\password.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1453773064_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\1453773064_Login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_with_Stethoscope_backgrounds_powerpoint (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\Doctor_with_Stethoscope_backgrounds_powerpoint (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Extra Icons\save.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="departments_20130605_140855_1370430535" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\departments_20130605_140855_1370430535.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1453775187_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\1453775187_8.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-Manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\search-Manager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="the_treatment_center3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\the_treatment_center3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mi_scare_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\mi_scare_report.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nir 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\nir 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sfondo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\sfondo4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-patient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\add-patient.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DSCN9725_mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\DSCN9725_mini.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\password.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue-radial-gradient-background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\Blue-radial-gradient-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\lab.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Action-db-add-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\Action-db-add-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="test_tubes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\test_tubes.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452976635_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452976635_login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1453775289_doctor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\1453775289_doctor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gnome_application_exit (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\gnome_application_exit (3).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-stretch2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\background-stretch.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452441138_folder-search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452441138_folder-search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1453774333_Application" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\1453774333_Application.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452441676_folder-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452441676_folder-search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_with_Stethoscope_backgrounds_powerpoint (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\Doctor_with_Stethoscope_backgrounds_powerpoint (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452977326_user-group-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452977326_user-group-new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anti_virus_old_school" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\anti_virus_old_school.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1453774669_binary-tree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\1453774669_binary-tree.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spellcheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\spellcheck.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-patient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\search-patient.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gnome_application_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\gnome_application_exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_find (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\edit_find (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452976746_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452976746_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainMenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\MainMenu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452980113_Login Manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452980113_Login Manager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-stretch1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\background-stretch.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\password.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue-radial-gradient-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\Blue-radial-gradient-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blood-drop-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\blood-drop-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452977420_contact-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452977420_contact-new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="test_tubes (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\test_tubes (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slide-04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\slide-04.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gnome_application_exit (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\gnome_application_exit (2).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\xray.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="App-login-manager-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\App-login-manager-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stethoscope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\stethoscope.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\eye-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Action-db-add-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\Action-db-add-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medical-pharmaceuticals-powerpoint-templates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\medical-pharmaceuticals-powerpoint-templates.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_with_Stethoscope_backgrounds_powerpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\Doctor_with_Stethoscope_backgrounds_powerpoint.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452979599_contact-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452979599_contact-new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="820301_N26_webview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\820301_N26_webview1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db_comit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\db_comit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="the_treatment_center31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\the_treatment_center3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="test_tubes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\test_tubes.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anti_virus_old_school (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\anti_virus_old_school (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_bck (800 x 532)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\login_bck (800 x 532).jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452040377_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452040377_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_software_update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\system_software_update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hospital" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\hospital.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="our-services-banners-900x300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\our-services-banners-900x300.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inner_header_031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\inner_header_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ppp_med_needle_tle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\ppp_med_needle_tle.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dept_header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Extra Icons\dept_header.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452441138_folder-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452441138_folder-search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gnome_application_exit (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\gnome_application_exit (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\Login-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_with_Stethoscope_backgrounds_powerpoint (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\Doctor_with_Stethoscope_backgrounds_powerpoint (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CT_Scan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\CT_Scan.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inner_header_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\inner_header_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_software_update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\system_software_update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1452977394_contact-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\1452977394_contact-new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_find (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Icons\edit_find (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1453774587_Manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Menu Icons\1453774587_Manager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-stretch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\background-stretch.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="XuET5Dj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Backgrounds\XuET5Dj.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

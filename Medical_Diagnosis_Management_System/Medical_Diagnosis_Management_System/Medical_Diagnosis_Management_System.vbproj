@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CEA35DF7-9EF8-4A0C-B732-C4F9CED9C5F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Medical_Diagnosis_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Medical_Diagnosis_Management_System</RootNamespace>
+    <AssemblyName>Medical_Diagnosis_Management_System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Medical_Diagnosis_Management_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Medical_Diagnosis_Management_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>the_treatment_center3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing.Compatibility" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing.Imaging" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Billds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BillReportPrint.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillReportPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Department\frmDepartmentAdd.Designer.vb">
+      <DependentUpon>frmDepartmentAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Department\frmDepartmentAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Department\frmDeptView.Designer.vb">
+      <DependentUpon>frmDeptView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Department\frmDeptView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctor\frmUpdateDoctor.Designer.vb">
+      <DependentUpon>frmUpdateDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Doctor\frmUpdateDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\About\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\frmChangePwd.Designer.vb">
+      <DependentUpon>frmChangePwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\frmChangePwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\BillPrint.Designer.vb">
+      <DependentUpon>BillPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\BillPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmBiochemReport.Designer.vb">
+      <DependentUpon>frmBiochemReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmBiochemReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmBloodReport.Designer.vb">
+      <DependentUpon>frmBloodReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmBloodReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmCTScanReport.Designer.vb">
+      <DependentUpon>frmCTScanReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmCTScanReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmEyeExamReport.Designer.vb">
+      <DependentUpon>frmEyeExamReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmEyeExamReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmSonographyReport.Designer.vb">
+      <DependentUpon>frmSonographyReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmSonographyReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmStoolReport.Designer.vb">
+      <DependentUpon>frmStoolReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmStoolReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmUrineReport.Designer.vb">
+      <DependentUpon>frmUrineReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmUrineReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmXRayReport.Designer.vb">
+      <DependentUpon>frmXRayReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmXRayReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Splash &amp; MDI\frmDiagnosisMSMDI.Designer.vb">
+      <DependentUpon>frmDiagnosisMSMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Splash &amp; MDI\frmDiagnosisMSMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctor\frmDoctorAdd.Designer.vb">
+      <DependentUpon>frmDoctorAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Doctor\frmDoctorAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmFeeCharges.Designer.vb">
+      <DependentUpon>frmFeeCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipt &amp; Reports\frmFeeCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmImagCTScan.Designer.vb">
+      <DependentUpon>frmImagCTScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmImagCTScan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmImagSonography.Designer.vb">
+      <DependentUpon>frmImagSonography.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmImagSonography.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmImagXray.Designer.vb">
+      <DependentUpon>frmImagXray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmImagXray.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmMicroStool.Designer.vb">
+      <DependentUpon>frmMicroStool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmMicroStool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmMicroUrine.Designer.vb">
+      <DependentUpon>frmMicroUrine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmMicroUrine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmOpthalEyeExam.Designer.vb">
+      <DependentUpon>frmOpthalEyeExam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmOpthalEyeExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmPathoBlood.Designer.vb">
+      <DependentUpon>frmPathoBlood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmPathoBlood.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\frmPatientAdd.Designer.vb">
+      <DependentUpon>frmPatientAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\frmPatientAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\frmPatientView.Designer.vb">
+      <DependentUpon>frmPatientView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\frmPatientView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Registration\frmPatRegDiagnosis.Designer.vb">
+      <DependentUpon>frmPatRegDiagnosis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registration\frmPatRegDiagnosis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmPathoBiochem.Designer.vb">
+      <DependentUpon>frmPathoBiochem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmPathoBiochem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\frmPatientSearch.Designer.vb">
+      <DependentUpon>frmPatientSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\frmPatientSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\frmRegisterNewUser.Designer.vb">
+      <DependentUpon>frmRegisterNewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\frmRegisterNewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff\frmStaffSearch.Designer.vb">
+      <DependentUpon>frmStaffSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff\frmStaffSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff\frmStaffView.Designer.vb">
+      <DependentUpon>frmStaffView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff\frmStaffView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateBiochem.Designer.vb">
+      <DependentUpon>frmUpdateBiochem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateBiochem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateBlood.Designer.vb">
+      <DependentUpon>frmUpdateBlood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateBlood.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateCTScan.Designer.vb">
+      <DependentUpon>frmUpdateCTScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateCTScan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateEyeExam.Designer.vb">
+      <DependentUpon>frmUpdateEyeExam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateEyeExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\frmUpdatePatient.Designer.vb">
+      <DependentUpon>frmUpdatePatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\frmUpdatePatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateSono.Designer.vb">
+      <DependentUpon>frmUpdateSono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateSono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Staff\frmUpdateStaff.Designer.vb">
+      <DependentUpon>frmUpdateStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff\frmUpdateStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateStool.Designer.vb">
+      <DependentUpon>frmUpdateStool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateStool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateUrine.Designer.vb">
+      <DependentUpon>frmUpdateUrine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateUrine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateXray.Designer.vb">
+      <DependentUpon>frmUpdateXray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmUpdateXray.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generic Module\GenericFunctMod.vb" />
+    <Compile Include="MDSdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDSdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Staff\frmStaffAdd.designer.vb">
+      <DependentUpon>frmStaffAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Staff\frmStaffAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Splash &amp; MDI\SplashDiagnosticsMS.Designer.vb">
+      <DependentUpon>SplashDiagnosticsMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Splash &amp; MDI\SplashDiagnosticsMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BillReportPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillReportPrint.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Department\frmDepartmentAdd.resx">
+      <DependentUpon>frmDepartmentAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Department\frmDeptView.resx">
+      <DependentUpon>frmDeptView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctor\frmUpdateDoctor.resx">
+      <DependentUpon>frmUpdateDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\frmChangePwd.resx">
+      <DependentUpon>frmChangePwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\BillPrint.resx">
+      <DependentUpon>BillPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmBiochemReport.resx">
+      <DependentUpon>frmBiochemReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmBloodReport.resx">
+      <DependentUpon>frmBloodReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmCTScanReport.resx">
+      <DependentUpon>frmCTScanReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmEyeExamReport.resx">
+      <DependentUpon>frmEyeExamReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmSonographyReport.resx">
+      <DependentUpon>frmSonographyReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmStoolReport.resx">
+      <DependentUpon>frmStoolReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmUrineReport.resx">
+      <DependentUpon>frmUrineReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmXRayReport.resx">
+      <DependentUpon>frmXRayReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Splash &amp; MDI\frmDiagnosisMSMDI.resx">
+      <DependentUpon>frmDiagnosisMSMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctor\frmDoctorAdd.resx">
+      <DependentUpon>frmDoctorAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipt &amp; Reports\frmFeeCharges.resx">
+      <DependentUpon>frmFeeCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmImagCTScan.resx">
+      <DependentUpon>frmImagCTScan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmImagSonography.resx">
+      <DependentUpon>frmImagSonography.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmImagXray.resx">
+      <DependentUpon>frmImagXray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmMicroStool.resx">
+      <DependentUpon>frmMicroStool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmMicroUrine.resx">
+      <DependentUpon>frmMicroUrine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmOpthalEyeExam.resx">
+      <DependentUpon>frmOpthalEyeExam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmPathoBlood.resx">
+      <DependentUpon>frmPathoBlood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\frmPatientAdd.resx">
+      <DependentUpon>frmPatientAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\frmPatientView.resx">
+      <DependentUpon>frmPatientView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Registration\frmPatRegDiagnosis.resx">
+      <DependentUpon>frmPatRegDiagnosis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmPathoBiochem.resx">
+      <DependentUpon>frmPathoBiochem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\frmPatientSearch.resx">
+      <DependentUpon>frmPatientSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\frmRegisterNewUser.resx">
+      <DependentUpon>frmRegisterNewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\frmStaffSearch.resx">
+      <DependentUpon>frmStaffSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\frmStaffView.resx">
+      <DependentUpon>frmStaffView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateBiochem.resx">
+      <DependentUpon>frmUpdateBiochem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateBlood.resx">
+      <DependentUpon>frmUpdateBlood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateCTScan.resx">
+      <DependentUpon>frmUpdateCTScan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateEyeExam.resx">
+      <DependentUpon>frmUpdateEyeExam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\frmUpdatePatient.resx">
+      <DependentUpon>frmUpdatePatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateSono.resx">
+      <DependentUpon>frmUpdateSono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\frmUpdateStaff.resx">
+      <DependentUpon>frmUpdateStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateStool.resx">
+      <DependentUpon>frmUpdateStool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateUrine.resx">
+      <DependentUpon>frmUpdateUrine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmUpdateXray.resx">
+      <DependentUpon>frmUpdateXray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Staff\frmStaffAdd.resx">
+      <DependentUpon>frmStaffAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Splash &amp; MDI\SplashDiagnosticsMS.resx">
+      <DependentUpon>SplashDiagnosticsMS.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Billds.xsc">
+      <DependentUpon>Billds.xsd</DependentUpon>
+    </None>
+    <None Include="Billds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Billds.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Billds.xss">
+      <DependentUpon>Billds.xsd</DependentUpon>
+    </None>
+    <None Include="MDSdbDataSet.xsc">
+      <DependentUpon>MDSdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MDSdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MDSdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MDSdbDataSet.xss">
+      <DependentUpon>MDSdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Pictures\Extra Icons\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MDSdb.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\Backgrounds\820301_N26_webview1.jpg" />
+    <Content Include="Pictures\Backgrounds\background-stretch.jpg" />
+    <Content Include="Pictures\Backgrounds\Blue-radial-gradient-background.png" />
+    <Content Include="Pictures\Backgrounds\departments_20130605_140855_1370430535.jpg" />
+    <Content Include="Pictures\Backgrounds\diagnosis.1134622_std.jpg" />
+    <Content Include="the_treatment_center3.ico" />
+    <None Include="Pictures\Backgrounds\Doctor_with_Stethoscope_backgrounds_powerpoint %282%29.jpg" />
+    <Content Include="Pictures\Backgrounds\Doctor_with_Stethoscope_backgrounds_powerpoint.jpg" />
+    <Content Include="Pictures\Backgrounds\DSCN9725_mini.jpg" />
+    <Content Include="Pictures\Backgrounds\HNM-gradient-background-reflected-vertically-with-gears.png" />
+    <None Include="Pictures\Backgrounds\inner_header_03.jpg" />
+    <None Include="Pictures\Backgrounds\MainMenu1.jpg" />
+    <Content Include="Pictures\Backgrounds\medical-pharmaceuticals-powerpoint-templates.jpg" />
+    <None Include="Pictures\Backgrounds\nir 1.jpg" />
+    <None Include="Pictures\Backgrounds\our-services-banners-900x300.png" />
+    <None Include="Pictures\Backgrounds\ppp_med_needle_tle.jpg" />
+    <Content Include="Pictures\Backgrounds\sfondo4.jpg" />
+    <None Include="Pictures\Backgrounds\slide-04.jpg" />
+    <None Include="Pictures\Backgrounds\XuET5Dj.jpg" />
+    <Content Include="Pictures\Extra Icons\admin.jpg" />
+    <Content Include="Pictures\Extra Icons\banner.jpg" />
+    <Content Include="Pictures\Extra Icons\but_addStudent.gif" />
+    <Content Include="Pictures\Extra Icons\but_addStudent1.gif" />
+    <Content Include="Pictures\Extra Icons\calculator.gif" />
+    <Content Include="Pictures\Extra Icons\CLOWN.GIF" />
+    <Content Include="Pictures\Extra Icons\config.gif" />
+    <Content Include="Pictures\Extra Icons\dept_header.png" />
+    <Content Include="Pictures\Extra Icons\edit.gif" />
+    <Content Include="Pictures\Extra Icons\FILES.GIF" />
+    <Content Include="Pictures\Extra Icons\find.gif" />
+    <Content Include="Pictures\Extra Icons\go.gif" />
+    <Content Include="Pictures\Extra Icons\header.jpg" />
+    <Content Include="Pictures\Extra Icons\help.gif" />
+    <Content Include="Pictures\Extra Icons\LOCK.GIF" />
+    <Content Include="Pictures\Extra Icons\login_lock.gif" />
+    <Content Include="Pictures\Extra Icons\logOut.gif" />
+    <Content Include="Pictures\Extra Icons\NOTES.GIF" />
+    <Content Include="Pictures\Extra Icons\notice.gif" />
+    <Content Include="Pictures\Extra Icons\Operator.jpg" />
+    <Content Include="Pictures\Extra Icons\PENCIL.GIF" />
+    <Content Include="Pictures\Extra Icons\prfrmncGraph.gif" />
+    <Content Include="Pictures\Extra Icons\printer.gif" />
+    <Content Include="Pictures\Extra Icons\redo.gif" />
+    <Content Include="Pictures\Extra Icons\result.gif" />
+    <Content Include="Pictures\Extra Icons\save.gif" />
+    <Content Include="Pictures\Extra Icons\search.gif" />
+    <Content Include="Pictures\Extra Icons\search_bg.gif" />
+    <Content Include="Pictures\Extra Icons\student.gif" />
+    <Content Include="Pictures\Extra Icons\student.jpg" />
+    <Content Include="Pictures\Extra Icons\teacher.jpg" />
+    <Content Include="Pictures\Extra Icons\try.jpg" />
+    <Content Include="Pictures\Extra Icons\undo.gif" />
+    <Content Include="Pictures\Extra Icons\upload.gif" />
+    <Content Include="Pictures\Extra Icons\WindowIcon.png" />
+    <None Include="Pictures\Icons\1451921400_applications-science.png" />
+    <None Include="Pictures\Icons\1452045691_system-software-update.png" />
+    <None Include="Pictures\Icons\1452040377_2.png" />
+    <None Include="Pictures\Icons\1452441138_folder-search.png" />
+    <None Include="Pictures\Icons\1452441676_folder-search.png" />
+    <None Include="Pictures\Icons\1452976635_login.png" />
+    <None Include="Pictures\Icons\1452976746_delete.png" />
+    <None Include="Pictures\Icons\1452977326_user-group-new.png" />
+    <None Include="Pictures\Icons\1452977394_contact-new.png" />
+    <None Include="Pictures\Icons\1452977420_contact-new.png" />
+    <None Include="Pictures\Icons\1452979531_contact-new.png" />
+    <None Include="Pictures\Icons\1452979599_contact-new.png" />
+    <None Include="Pictures\Icons\1452980113_Login Manager.png" />
+    <Content Include="Pictures\Icons\212.png" />
+    <None Include="Pictures\Icons\Action-db-add-icon.png" />
+    <Content Include="Pictures\Icons\add-employee.png" />
+    <Content Include="Pictures\Icons\add-patient.png" />
+    <None Include="Pictures\Icons\anti_virus_old_school.png" />
+    <None Include="Pictures\Icons\anti_virus_old_school %281%29.png" />
+    <None Include="Pictures\Icons\App-login-manager-icon.png" />
+    <Content Include="Pictures\Icons\appointment.png" />
+    <Content Include="Pictures\Icons\appt-icon.png" />
+    <None Include="Pictures\Icons\blood-drop-icon.png" />
+    <Content Include="Pictures\Icons\cards_bind_address %2864 x 64%29.png" />
+    <Content Include="Pictures\Icons\change_password %2864 x 64%29.png" />
+    <None Include="Pictures\Icons\CT_Scan.png" />
+    <Content Include="Pictures\Icons\db_comit.png" />
+    <Content Include="Pictures\Icons\delete-employee.png" />
+    <Content Include="Pictures\Icons\delete-patient.png" />
+    <Content Include="Pictures\Icons\dfg %2864 x 64%29.jpg" />
+    <Content Include="Pictures\Icons\document_save.png" />
+    <Content Include="Pictures\Icons\edit-Manager.png" />
+    <Content Include="Pictures\Icons\edit-patient.png" />
+    <None Include="Pictures\Icons\edit_clear.png" />
+    <Content Include="Pictures\Icons\edit_find %281%29.png" />
+    <Content Include="Pictures\Icons\ere.png" />
+    <None Include="Pictures\Icons\eye-icon.png" />
+    <Content Include="Pictures\Icons\frontpage %2864 x 64%29.png" />
+    <Content Include="Pictures\Icons\gI_71831_receipt-icon2.png" />
+    <Content Include="Pictures\Icons\gnome_application_exit %281%29.png" />
+    <Content Include="Pictures\Icons\gnome_application_exit %282%29.png" />
+    <Content Include="Pictures\Icons\gnome_application_exit %283%29.png" />
+    <Content Include="Pictures\Icons\gnome_application_exit.png" />
+    <Content Include="Pictures\Icons\Gynaecology.png" />
+    <Content Include="Pictures\Icons\hospital.png" />
+    <Content Include="Pictures\Icons\hospitalDischargeIcon.png" />
+    <None Include="Pictures\Icons\Login-icon.png" />
+    <Content Include="Pictures\Icons\login_bck %28800 x 532%29.jpg" />
+    <Content Include="Pictures\Icons\logout-icon %281%29.png" />
+    <Content Include="Pictures\Icons\medical-bed-icon.png" />
+    <None Include="Pictures\Icons\password.png" />
+    <Content Include="Pictures\Icons\pediactric-icon2.png" />
+    <Content Include="Pictures\Icons\prescription.png" />
+    <Content Include="Pictures\Icons\profile-icon.png" />
+    <Content Include="Pictures\Icons\save.png" />
+    <Content Include="Pictures\Icons\schedule-icon.png" />
+    <Content Include="Pictures\Icons\search-Manager.png" />
+    <Content Include="Pictures\Icons\search-patient.png" />
+    <Content Include="Pictures\Icons\Services-icon.png" />
+    <None Include="Pictures\Icons\stethoscope.png" />
+    <Content Include="Pictures\Icons\Surgical.png" />
+    <None Include="Pictures\Icons\system_software_update.png" />
+    <None Include="Pictures\Icons\test_tubes.png" />
+    <None Include="Pictures\Icons\test_tubes %281%29.png" />
+    <None Include="Pictures\Icons\the_treatment_center3.jpg" />
+    <Content Include="Pictures\Icons\view-schedule.png" />
+    <None Include="Pictures\lab.jpg" />
+    <Content Include="Pictures\Icons\view.png" />
+    <None Include="Pictures\Icons\xray.png" />
+    <None Include="Pictures\Menu Icons\1453773064_Login.png" />
+    <None Include="Pictures\Menu Icons\1453774333_Application.png" />
+    <None Include="Pictures\Menu Icons\1453774587_Manager.png" />
+    <None Include="Pictures\Menu Icons\1453774669_binary-tree.png" />
+    <None Include="Pictures\Menu Icons\1453775187_8.png" />
+    <None Include="Pictures\Menu Icons\1453775289_doctor.png" />
+    <None Include="Pictures\Menu Icons\spellcheck.png" />
+    <None Include="Pictures\Menu Icons\receipt.png" />
+    <None Include="Pictures\Menu Icons\test_tubes.png" />
+    <None Include="Pictures\Menu Icons\mi_scare_report.png" />
+    <Content Include="Pictures\the_treatment_center3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
